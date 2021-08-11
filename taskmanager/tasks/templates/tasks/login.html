@@ -5,15 +5,19 @@
     <h1>Login </h1>
 </div>
 
-<div class="card-body">
+<div class="form card-body">
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <input class="button" type="submit" value="Login">
+        <input class=" btn btn-primary" type="submit" value="Login">
+        <a class="btn btn-danger" href="{% url 'reset_password' %}">Forgot Password</a>
+
     </form>
     <p>New over here? <a href="{% url 'register' %}">Register</a> </p>
 
 </div>
+
+
 
 
 

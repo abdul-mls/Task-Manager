@@ -9,6 +9,9 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 
+from . import forms
+from .filters import OrderFilter
+
 
 # Create your views here.
 class CustomLoginView(LoginView):
@@ -22,10 +25,29 @@ class CustomLoginView(LoginView):
         return reverse_lazy('task_list')
 
 
-class RegisterView(FormView):
-    template_name = 'tasks/register.html'
-    form_class = UserCreationForm
-    success_url = reverse_lazy('task_list')
+#
+# class RegisterView(FormView):
+#     template_name = 'tasks/register.html'
+#     form_class = UserCreationForm
+#     success_url = reverse_lazy('task_list')
+#
+# def form_valid(self, form):
+#     user = form.save()
+#     if user is not None:
+#         login(self.request, user)
+#     return super(RegisterView, self).form_valid(form)
+#
+# # refusing access to 'login' and 'register' page to user, as user already logged in
+# def get(self, *args, **kwargs):
+#     if self.request.user.is_authenticated:
+#         return redirect('task_list')
+#     return super(RegisterView, self).get(*args, **kwargs)
+
+
+class RegisterView(CreateView):
+    form_class = forms.UserCreateForm
+    success_url = reverse_lazy("login")
+    template_name = "tasks/register.html"
 
     def form_valid(self, form):
         user = form.save()
@@ -40,6 +62,15 @@ class RegisterView(FormView):
         return super(RegisterView, self).get(*args, **kwargs)
 
 
+# class Filtering(ListView):
+#     model = OrderFilter
+#     context_object_name = 'myFilter'
+#
+#     def get_context_data(self, **kwargs):
+#         context['myFilter'] = OrderFilter(self.request.GET, queryset=self.get_queryset())
+#         return context
+
+
 class TaskList(LoginRequiredMixin, ListView):
     model = Task
     context_object_name = 'tasks'
@@ -49,6 +80,7 @@ class TaskList(LoginRequiredMixin, ListView):
         context = super().get_context_data(**kwargs)
         context['tasks'] = context['tasks'].filter(user=self.request.user)
         context['count'] = context['tasks'].filter(complete=False).count()
+        context['myFilter'] = OrderFilter(self.request.GET, queryset=self.get_queryset())
 
         search_input = self.request.GET.get('search-area') or ''
         if search_input:
@@ -83,4 +115,3 @@ class TaskUpdate(LoginRequiredMixin, UpdateView):
 class TaskDelete(LoginRequiredMixin, DeleteView):
     model = Task
     success_url = reverse_lazy('task_list')
-

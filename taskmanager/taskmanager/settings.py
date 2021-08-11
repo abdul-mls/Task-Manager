@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tasks',
+    'django_filters',
+    'bootstrapform',
+    'bootstrap4'
 ]
 
 MIDDLEWARE = [
@@ -125,3 +128,12 @@ LOGIN_URL = 'login'
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'youka9822@gmail.com'
+EMAIL_HOST_PASSWORD = 'qazwsx.123'
+EMAIL_USE_TLS = True
+
