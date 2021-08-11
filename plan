@@ -19,17 +19,32 @@ Backend:
     -importance level -----------
 include new models in form -------
 -fix search button ------------
+-register with email ----------
+-forgot password login ----------
 
 Frontend:
 
 tasks left:
 Backend:
--register with email
--forgot password login
 -filter that shows tasks by importance
 -receive email for tasks not completed
 
 Frontend:
--clean registration form, remove label
+-clean registration form, remove label information
 -show task's description (task detail)
 -allign form together (description box)
+
+-arrow
+-label of "importance"
+-add task button
+-more space between table
+-edit and delete task icons
+-bottom margin email
+-create task form
+-edit task form
+-delete task form
+-register form
+-login form
+-forgot password form
+
+test
