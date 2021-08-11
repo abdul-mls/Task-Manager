@@ -44,6 +44,8 @@ Frontend:
 -edit task form
 -delete task form
 -register form
--login form
+-login form ------------
 -forgot password form
-
+-home button
+-sort status
+-email bottom margin

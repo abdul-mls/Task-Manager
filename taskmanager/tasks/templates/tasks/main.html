@@ -25,6 +25,21 @@
             box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
        }
 
+ .login{
+        border: 0px solid red;
+        margin-bottom: 20px;
+        max-width: 600px;
+        margin: auto;
+        padding-top:50px;
+        background-color: #fff;
+        -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+       }
+
+ #login-register{
+    margin-top:10px;
+ }
+
 <!--        h1,h2,h3,h4,h5,h6,{-->
 <!--            font-family: 'Raleway', sans-serif;-->
 <!--        }-->
@@ -116,7 +131,7 @@
 <!--        }-->
 
         .card-body {
-            padding: 20px;
+            padding-bottom: 1px;
         }
 
 table, td, th {
@@ -128,7 +143,7 @@ table {
     width: 100%;
     border-spacing: 10px;
     border-spacing: 20px;
-    border-collapse: separate;
+<!--    border-collapse: separate;-->
 }
 
 td, th {
@@ -138,12 +153,11 @@ td, th {
 
    .form{
         border: 0px solid black;
-        width: 50%;
+        width: 90%;
         height: 50%;
-        margin: 50px auto;
+        margin: 10px auto;
         overflow-wrap: break-word;
         text-align: center
-
         }
 
    .email{
@@ -163,6 +177,12 @@ td, th {
             {% block content %}
             {% endblock content %}
         </div>
+
+        <div class="login">
+             {% block login%}
+            {% endblock login %}
+        </div>
+
     </body>
 </html>
 
