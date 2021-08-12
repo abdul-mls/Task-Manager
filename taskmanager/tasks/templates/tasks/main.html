@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <!-- Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-   <style>
+
+
+    <style>
        body{
        background-color: #FAFAFA;
        font-family: 'Nunito', sans-serif;
@@ -83,19 +85,19 @@
 <!--            margin-left: 10px;-->
 <!--        }-->
 
-<!--        .task-complete-icon {-->
-<!--            height: 20px;-->
-<!--            width: 20px;-->
-<!--            background-color: rgb(105, 192, 105);-->
-<!--            border-radius: 50%;-->
-<!--        }-->
+        .task-complete-icon {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(105, 192, 105);
+            border-radius: 50%;
+        }
 
-<!--        .task-incomplete-icon {-->
-<!--            height: 20px;-->
-<!--            width: 20px;-->
-<!--            background-color: rgb(218, 218, 218);-->
-<!--            border-radius: 50%;-->
-<!--        }-->
+        .task-incomplete-icon {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(218, 218, 218);
+            border-radius: 50%;
+        }
 
 <!--        .delete-link {-->
 <!--            text-decoration: none;-->
@@ -113,9 +115,9 @@
         }
 
          #add-link {
-            color: #EB796F;
+            color: black;
             text-decoration: none;
-            font-size: 42px;
+            font-size: 60px;
             text-shadow: 1px 1px #81413b;
         }
 
@@ -134,22 +136,22 @@
             padding-bottom: 1px;
         }
 
-table, td, th {
 
+tr.spaceUnder>td {
+  padding-bottom: 1.5em;
 }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border-spacing: 10px;
+        border-spacing: 20px;
+    <!--    border-collapse: separate;-->
+    }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-    border-spacing: 10px;
-    border-spacing: 20px;
-<!--    border-collapse: separate;-->
-}
+    td, th {
+      text-align: center;
 
-td, th {
-  text-align: center;
-
-}
+    }
 
    .form{
         border: 0px solid black;

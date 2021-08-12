@@ -5,4 +5,4 @@ from .models import *
 class OrderFilter(django_filters.FilterSet):
     class Meta:
         model = Task
-        fields = ('importance', )
+        fields = ('complete','importance', )

@@ -34,12 +34,13 @@ Frontend:
 -show task's description (task detail)
 -allign form together (description box)
 
--arrow
--edit and delete task icons
--add task button
--home button
--sort status
--more space between table
+-arrow -------
+-edit and delete task icons ---------
+-add task button ---------
+-home button ------------
+-sort status ------------
+-more space between table rows -----------
+-difference between completed tasks and not completed -------
 
 -create task form
 -edit task form
