@@ -35,17 +35,24 @@ Frontend:
 -allign form together (description box)
 
 -arrow
--label of "importance"
--add task button
--more space between table
 -edit and delete task icons
--bottom margin email
+-add task button
+-home button
+-sort status
+-more space between table
+
 -create task form
 -edit task form
 -delete task form
 -register form
--login form ------------
 -forgot password form
--home button
--sort status
--email bottom margin
+
+-label of "importance"
+-+ 1 to tasks numbers
+
+-about us page (fix margin ext)
+
+DONE:
+-email bottom margin --------
+-login form ------------
+-bottom margin email --------

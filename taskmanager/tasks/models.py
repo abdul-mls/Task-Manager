@@ -25,4 +25,4 @@ class Task(models.Model):
         return self.title
 
     class Meta:
-        ordering = ['ending_date']
+        ordering = ['creation_date']

@@ -13,10 +13,27 @@
         <a class="btn btn-danger" href="{% url 'reset_password' %}">Forgot Password</a>
     </form>
     <p id="login-register">New over here? <a href="{% url 'register' %}">Register</a> </p>
-</div>
+<!--   <p><a id="login-register" href="{% url 'register' %}">About Us</a></p>-->
+    <p>About Us: <br>
+    <span id="dots"></span><span id="more">Zetrack is a task management website created to help you keep your tasks up to date, anywhere by simply logging in.</span></p>
+    <button style="margin-bottom:15px; " class="btn btn-info" onclick="myFunction()" id="myBtn">Read more</button>
 
 
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
 
-
-
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+          }
+        }
+    </script>
 {% endblock login %}
