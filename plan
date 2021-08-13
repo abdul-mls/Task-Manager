@@ -31,11 +31,10 @@ Backend:
 
 Frontend:
 -all forgot password templates
-
--clean registration form, remove label information
--label of "importance"
 -+ 1 to tasks numbers
 
+-label of "importance"
+-margin register from bottom
 -about us page (fix margin ext)
 
 DONE:
@@ -53,3 +52,4 @@ DONE:
 -edit task form -------
 -delete task form -----
 -register form ----
+-clean registration form -------
