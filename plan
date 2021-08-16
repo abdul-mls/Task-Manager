@@ -30,7 +30,6 @@ Backend:
 -receive email for tasks not completed
 
 Frontend:
--all forgot password templates
 -+ 1 to tasks numbers
 
 -label of "importance"
@@ -53,3 +52,4 @@ DONE:
 -delete task form -----
 -register form ----
 -clean registration form -------
+-all forgot password templates --------
