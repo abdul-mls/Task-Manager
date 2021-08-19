@@ -30,7 +30,7 @@ Backend:
 -receive email for tasks not completed
 
 Frontend:
--all forgot password templates
+-all forgot password templates --------
 -+ 1 to tasks numbers
 
 -label of "importance"
