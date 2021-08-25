@@ -1,15 +1,21 @@
 Activity tracker ( custom/advanced todo)
 -re create a todo project
 -shouldn't be too complicated just a simple task tracker where you can connect and see
-
--implement ne features such as login/registration
--give categories to tasks (create,edit,delete categories)
--show all tasks and show tasks per categories
--task deadlines (live time)
--receive automatic email reminder about activity's deadline
-
 -rebuild project until I understand how to do it without watching
 
+
+
+tasks left:
+Backend:
+-filter that shows tasks by importance
+-receive email for tasks not completed, and task's deadline
+
+Frontend:
+-+ 1 to tasks numbers
+-label of "importance"
+-margin register from bottom
+-about us page (fix margin ext)
+-better way of selecting task deadline, better date input
 
 DONE:
 Backend:
@@ -23,21 +29,6 @@ include new models in form -------
 -forgot password login ----------
 
 Frontend:
-
-tasks left:
-Backend:
--filter that shows tasks by importance
--receive email for tasks not completed
-
-Frontend:
--all forgot password templates ---------
--+ 1 to tasks numbers -----
-
--label of "importance"
--margin register from bottom
--about us page (fix margin ext)
-
-DONE:
 -email bottom margin ---------
 -login form ------------
 -bottom margin email --------
@@ -53,3 +44,4 @@ DONE:
 -delete task form -----
 -register form ----
 -clean registration form -------
+-all forgot password templates
